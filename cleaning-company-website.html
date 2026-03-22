@@ -997,8 +997,11 @@ function sendApplyMdWA(type){
 }
 
 // Scroll reveals
-var obs=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)e.target.classList.add('visible')})},{threshold:.1});
-document.querySelectorAll('.reveal').forEach(function(el){obs.observe(el)});
+window.addEventListener('load',function(){
+  var obs=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)e.target.classList.add('visible')})},{threshold:.1});
+  document.querySelectorAll('.reveal').forEach(function(el){obs.observe(el)});
+  renderNb();
+});
 
 // Back to top
 window.addEventListener('scroll',function(){
