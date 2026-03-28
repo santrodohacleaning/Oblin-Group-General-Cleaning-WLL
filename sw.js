@@ -1,7 +1,7 @@
-const CACHE = 'santro-doha-v1';
+const CACHE = 'oblin-group-v1';
 const ASSETS = [
   '/cleaning-company-website.html',
-  '/santro-admin-panel.html',
+  '/elite-admin-panel.html',
   '/manifest.json',
   '/manifest-admin.json'
 ];
